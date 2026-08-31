@@ -16,4 +16,3 @@ def test_no_databricks_only_magics_in_portable_sources() -> None:
     source = "\n".join(path.read_text() for path in root.glob("*.py"))
     assert "%sql" not in source
     assert "dbutils" not in source
-
