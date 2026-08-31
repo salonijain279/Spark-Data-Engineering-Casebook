@@ -1,6 +1,6 @@
 # Spark Data Engineering: From Raw Files to Decision-Ready Tables
 
-This casebook turns three big-data lab themes into reusable PySpark pipelines: semi-structured Yelp records, Wikipedia clickstream traffic, and airline route activity. The focus is not notebook screenshots; it is rerun-safe code that makes schema, transformation, and output contracts explicit.
+This casebook presents four Big Data coursework builds as standalone, reusable data-engineering projects. Together they cover semi-structured Yelp records, Wikipedia clickstream traffic, airline route activity, and a Hive/Delta-style table lifecycle. Each project is framed around a distinct data problem, pipeline design, and decision-ready output.
 
 ## What this demonstrates
 
@@ -10,14 +10,14 @@ This casebook turns three big-data lab themes into reusable PySpark pipelines: s
 - Converting row-oriented source files into partition-friendly Parquet outputs
 - Writing idempotent jobs with explicit CLI inputs and overwrite semantics
 
-## Projects
+## Project portfolio
 
 | Pipeline | Business question | Build |
 |---|---|---|
-| Yelp medallion pipeline | How can mixed review, user, and business records become a reusable analytics table? | Bronze ingestion, entity separation, left joins, silver Parquet output |
-| Wikipedia clickstream | Which pages attract traffic, which send it onward, and where are navigation imbalances? | Explicit schema, top-page and referrer metrics, full-outer page flow table |
-| Flight route metrics | Which origin-destination routes carry the most activity? | Multi-file CSV ingestion, route aggregation, columnar output |
-| Hive/Delta table lifecycle | How does a raw external source become a managed, query-efficient analytics table? | External CSV table, managed Parquet table, route query, rerun-safe cleanup |
+| Project 1 — Yelp medallion pipeline | How can mixed review, user, and business records become a reusable analytics table? | Bronze ingestion, entity separation, left joins, silver Parquet output |
+| Project 2 — Wikipedia clickstream | Which pages attract traffic, which send it onward, and where are navigation imbalances? | Explicit schema, top-page and referrer metrics, full-outer page flow table |
+| Project 3 — Flight route metrics | Which origin-destination routes carry the most activity? | Multi-file CSV ingestion, route aggregation, columnar output |
+| Project 4 — Hive/Delta table lifecycle | How does a raw external source become a managed, query-efficient analytics table? | External CSV table, managed Parquet table, route query, rerun-safe cleanup |
 
 ## Repository structure
 
