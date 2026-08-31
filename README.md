@@ -17,6 +17,7 @@ This casebook turns three big-data lab themes into reusable PySpark pipelines: s
 | Yelp medallion pipeline | How can mixed review, user, and business records become a reusable analytics table? | Bronze ingestion, entity separation, left joins, silver Parquet output |
 | Wikipedia clickstream | Which pages attract traffic, which send it onward, and where are navigation imbalances? | Explicit schema, top-page and referrer metrics, full-outer page flow table |
 | Flight route metrics | Which origin-destination routes carry the most activity? | Multi-file CSV ingestion, route aggregation, columnar output |
+| Hive/Delta table lifecycle | How does a raw external source become a managed, query-efficient analytics table? | External CSV table, managed Parquet table, route query, rerun-safe cleanup |
 
 ## Repository structure
 
@@ -25,6 +26,8 @@ src/
   yelp_medallion.py
   wikipedia_clickstream.py
   flight_route_metrics.py
+sql/
+  flight_table_lifecycle.sql
 tests/
   test_source_contracts.py
 ```
