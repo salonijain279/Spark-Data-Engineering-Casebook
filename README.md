@@ -1,8 +1,8 @@
 # Spark Data Engineering: From Raw Files to Decision-Ready Tables
 
-This casebook presents four Big Data coursework builds as standalone, reusable data-engineering projects. Together they cover semi-structured Yelp records, Wikipedia clickstream traffic, airline route activity, and a Hive/Delta-style table lifecycle. Each project is framed around a distinct data problem, pipeline design, and decision-ready output.
+I rebuilt four Big Data coursework exercises as standalone data-engineering projects. Together they cover semi-structured Yelp records, Wikipedia clickstream traffic, airline route activity, and a Hive/Delta-style table lifecycle. I treated each lab as its own data problem with an explicit pipeline and a decision-ready output—not as a collection of notebook exports.
 
-## What this demonstrates
+## What I practiced
 
 - Reading large JSON, TSV, and CSV inputs with explicit schemas where possible
 - Separating raw records into business entities and rebuilding an analytics-ready silver table
