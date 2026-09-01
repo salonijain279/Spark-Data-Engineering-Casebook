@@ -1,8 +1,8 @@
 # Spark Data Engineering: From Raw Files to Decision-Ready Tables
 
-I rebuilt four Big Data coursework exercises as standalone data-engineering projects. Together they cover semi-structured Yelp records, Wikipedia clickstream traffic, airline route activity, and a Hive/Delta-style table lifecycle. I treated each lab as its own data problem with an explicit pipeline and a decision-ready output—not as a collection of notebook exports.
+This repository contains four standalone data-engineering pipelines for semi-structured Yelp records, Wikipedia clickstream traffic, airline route activity, and a Hive/Delta-style table lifecycle. Each project has an explicit source contract, transformation path, and analytics-ready output.
 
-## What I practiced
+## Engineering coverage
 
 - Reading large JSON, TSV, and CSV inputs with explicit schemas where possible
 - Separating raw records into business entities and rebuilding an analytics-ready silver table
@@ -10,7 +10,7 @@ I rebuilt four Big Data coursework exercises as standalone data-engineering proj
 - Converting row-oriented source files into partition-friendly Parquet outputs
 - Writing idempotent jobs with explicit CLI inputs and overwrite semantics
 
-## Project portfolio
+## Projects
 
 | Pipeline | Business question | Build |
 |---|---|---|
@@ -52,7 +52,3 @@ The code is compatible with local Spark and can be adapted to Databricks Volumes
 - Derived tables are overwritten atomically by Spark, making reruns predictable.
 - The Yelp join keeps every review even when related user or business rows are missing.
 - The Wikipedia page-flow result retains pages that appear only as a source or only as a destination.
-
-## Origin
-
-Rebuilt from MSBA Big Data Analytics coursework as a portable portfolio project. Classroom prompts, exam material, and bulky notebook exports are excluded.
